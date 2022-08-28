@@ -5,25 +5,24 @@ const Navbar = () => {
     <>
      <Nav>
         <NavLink to="/">
-            <h1>Logo</h1>
+          <img  className="images" src={require('../images/logo2.jpg')} 
+          alt="logo" />
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink to="/about" activeStyle>
-            About
+          <NavLink to="/registration" activeStyle>
+            Registration
           </NavLink>
           <NavLink to="/services" activeStyle>
             Services
           </NavLink>
           <NavLink to="/contact-us" activeStyle>
             Contact Us
-          </NavLink>
-          <NavLink to="/sign-up" activeStyle>
-            Sign Up
           </NavLink> 
         </NavMenu>
         <NavBtn>
             <NavBtnLink to='/Signin'>Sign In</NavBtnLink>
+            <NavBtnLink to='/signup'>Sign Up</NavBtnLink>
         </NavBtn>
      </Nav>
     </>
